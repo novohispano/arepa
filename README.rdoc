@@ -2,13 +2,11 @@
 
 A Twitter feed for news from Venezuela using the Tweetstream gem.
 
----
-
-== Current Status
+=== Current Status
 
 It displays the last 50 tweets from Venezuela performing a 'Venezuela' query. However, it performs a call to the API every time. I want to store the tweets in the database and perform a timed query.
 
-== TODO
+=== TODO
 
 * I want to save the tweets in the database.
 * I want to timed the fetch for every 10 minutes.
