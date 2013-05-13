@@ -1,0 +1,5 @@
+%container.feed
+  %h1 Arepa.
+  %h2.lead Los últimos tuits sobre Venezuela.
+  - @statuses.each do |status|
+    %p= status.text
