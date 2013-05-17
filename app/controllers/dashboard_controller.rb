@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
   def show
-    @statuses = TwitterService.track('Venezuela')
+    @tweets = Tweet.fetch_tweets('Venezuela')
   end
 end
