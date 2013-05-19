@@ -1,5 +1,9 @@
 class DashboardController < ApplicationController
   def show
-    @tweets = Tweet.fetch_tweets('Venezuela')
+    @tweets = Tweets.all
+  end
+
+  def fetch_tweets
+    Tweet.fetch_tweets('Venezuela')
   end
 end
