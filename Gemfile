@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'rspec-rails'
 gem 'tweetstream'
-gem "haml-rails"
+gem 'haml-rails'
 gem 'bootstrap-sass'
 
 group :assets do

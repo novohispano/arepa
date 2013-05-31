@@ -5,5 +5,7 @@ class DashboardController < ApplicationController
 
   def fetch_tweets
     Tweet.fetch_tweets('Venezuela')
+
+    redirect_to root_path
   end
 end
