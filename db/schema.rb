@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130531204722) do
 
-  create_table "plans", :force => true do |t|
-    t.string   "description"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-    t.datetime "start"
-    t.string   "display_name"
-    t.string   "motivation"
-  end
-
   create_table "tweets", :force => true do |t|
     t.string   "username"
     t.string   "message"
@@ -29,21 +20,6 @@ ActiveRecord::Schema.define(:version => 20130531204722) do
     t.datetime "published"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-    t.string   "email"
-    t.string   "image"
-    t.string   "city"
-    t.string   "state"
-    t.string   "location"
   end
 
 end
