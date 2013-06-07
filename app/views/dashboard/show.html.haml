@@ -1,7 +1,8 @@
-.container.feed
+.container.tweet
   %h2.lead Los últimos tuits sobre Venezuela.
   - @tweets.each do |tweet|
-    %h6= tweet.published
+    %hr
+    %h6= formatted_time(tweet.published)
     %h4= tweet.username
     %p=  tweet.message
     %h6= tweet.location

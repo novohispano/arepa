@@ -13,4 +13,5 @@
           .nav-collapse.collapse
             %ul.nav.pull-right
             = link_to "Actualizar Feed", fetch_tweets_path, class: "nav-link"
-    = yield
+    .span8.feed
+      = yield
